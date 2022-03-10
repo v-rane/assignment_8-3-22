@@ -7,8 +7,10 @@ public class anagram {
 		String str1= sc.nextLine();
 		System.out.println("enter string2");
 		String str2 = sc.nextLine();
-		char a[]=str1.toCharArray();
-		char b[] = str2.toCharArray();
+		String S1 = str1.lowercase();
+		String S2 = str2.lowercase();
+		char a[]=S1.toCharArray();
+		char b[] = S2.toCharArray();
 		Arrays.sort(a);
 		Arrays.sort(b);
 		boolean result =Arrays.equals(a,b);
