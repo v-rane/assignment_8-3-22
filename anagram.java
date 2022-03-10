@@ -7,10 +7,13 @@ public class anagram {
 		String str1= sc.nextLine();
 		System.out.println("enter string2");
 		String str2 = sc.nextLine();
-		String S1 = str1.lowercase();
-		String S2 = str2.lowercase();
-		char a[]=S1.toCharArray();
-		char b[] = S2.toCharArray();
+		anagram r = new anagram();
+		r.ana(str1, str2);
+	}
+		public void ana(String str1,String str2) {
+			
+	char a[]=str1.toLowerCase().toCharArray();
+		char b[] = str2.toLowerCase().toCharArray();
 		Arrays.sort(a);
 		Arrays.sort(b);
 		boolean result =Arrays.equals(a,b);
@@ -26,3 +29,4 @@ public class anagram {
 	
 
 }
+
