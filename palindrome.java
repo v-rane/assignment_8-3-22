@@ -1,12 +1,8 @@
 package sebone;
 import java.util.*;
 public class palindrome {
- public static void main(String[] args) {
+	public void palindrome_no(int num){
 	int sum=0,r,temp;
-		Scanner scan =new Scanner(System.in);
-		System.out.println("enter the num");
-		int num = scan.nextInt();
-		scan.close();
 	    temp =num;
 		while(num>0) {
 			r =num%10;
@@ -19,6 +15,16 @@ public class palindrome {
 			 System.out.println("no is not palindrome");
 		 
 		}
+
+public static void main(String[] args) {
+	
+		Scanner scan =new Scanner(System.in);
+		System.out.println("enter the num");
+		int num = scan.nextInt();
+		palindrome p = new palindrome();
+		p.palindrome_no(num);
+		scan.close();
+}
 }
 
 
