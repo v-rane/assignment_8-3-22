@@ -1,5 +1,6 @@
 package sebone;
 import java.util.*;
+/*  program to find all prime numbers up to a given number*/
 public class primeno {
 	    public void prime(int no) {
 	    	for (int num =2;num <=no;
@@ -17,10 +18,6 @@ public class primeno {
 				
 			}
 	    }
-	
-  
-	
-		
 		public static void main(String args[]) {
            
 			Scanner scan = new Scanner(System.in);
@@ -29,14 +26,10 @@ public class primeno {
 			System.out.println("list of prime no. are:");
 			primeno p=new primeno();
 			p.prime(maxnum);
-			scan.close();
+		
 			
 		}
 	
 	}
-
-
-
-
 
 
