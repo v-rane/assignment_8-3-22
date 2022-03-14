@@ -1,7 +1,8 @@
-package sebone;
+ package sebone;
 import java.util.*;
+/* program to check whether a number is a palindrome or not*/
 public class palindrome {
-	public void palindrome_no(int num){
+	public void palindrome_no(int num){ 
 	int sum=0,r,temp;
 	    temp =num;
 		while(num>0) {
