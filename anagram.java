@@ -1,8 +1,9 @@
 package sebone;
 import java.util.*;
+/*program to print two strings are anagram or not i.e. can form one string  by arranging the char of another string */
 public class anagram {
 	public static void main(String[]args) {
-		Scanner sc= new Scanner(System.in);
+		Scanner sc= new Scanner(System.in); //to take input
 		System.out.println("enter string1 ");
 		String str1= sc.nextLine();
 		System.out.println("enter string2");
@@ -12,11 +13,11 @@ public class anagram {
 	}
 		public void ana(String str1,String str2) {
 			
-	char a[]=str1.toLowerCase().toCharArray();
+	char a[]=str1.toLowerCase().toCharArray(); // toCharArray() will convert the string into char array
 		char b[] = str2.toLowerCase().toCharArray();
-		Arrays.sort(a);
+		Arrays.sort(a);//for sorting char array
 		Arrays.sort(b);
-		boolean result =Arrays.equals(a,b);
+		boolean result =Arrays.equals(a,b);// check sorted array are equals
 		if(result==true) {
 			System.out.println("Strings are anagram");
 			
