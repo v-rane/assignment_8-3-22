@@ -24,7 +24,7 @@ public static void main(String[] args) {
 		int num = scan.nextInt();
 		palindrome p = new palindrome();
 		p.palindrome_no(num);
-		scan.close();
+		
 }
 }
 
